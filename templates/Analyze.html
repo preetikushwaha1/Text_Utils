@@ -1,0 +1,52 @@
+{% load static %}
+{% static 'images' as baseUrl %}
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Text Utlis</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+  
+   </head>
+   <!-- body -->
+   <body class="main-layout">
+ 
+    <section>
+            <div class="container">
+                <div class=" text-bg">
+                    <div class="row">
+                        <div class="col-md-12">
+                           <div class="row">
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="background-color: white">
+                                            
+                                <h1><b>Your Analyzed Text-{{ purpose}} </b></h1><br>
+                                <p> 
+                                    <pre>{{ analyzed_text }}
+                                    </pre>
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+            
+                     </div>
+                </div>
+            </div>
+        </div>
+            
+    </section>
+                      
+                        
+
+         
+
+  </body>
+</html>
